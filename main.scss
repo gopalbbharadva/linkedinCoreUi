@@ -7,7 +7,12 @@ $backGroundColor: #eef3f8;
   margin: 0;
 }
 
+body {
+  background-color: #f3f2ef;
+}
+
 header {
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
   border: 1px solid $secondaryColor;
@@ -68,7 +73,7 @@ header {
   justify-content: center;
 
   a {
-    color: #4B5563;
+    color: #4b5563;
     text-decoration: none;
     flex-direction: column;
     display: flex;
@@ -87,5 +92,60 @@ header {
 
   a:hover {
     color: black;
+  }
+}
+
+// sidebar
+.main-body {
+  margin: auto;
+  display: flex;
+  max-width: 1200px;
+}
+.sidebar {
+  position: sticky;
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.profile-div {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: $primaryColor;
+
+  img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-top: 25px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  small {
+    padding: 0.5rem;
+    color: #6b7280;
   }
 }
