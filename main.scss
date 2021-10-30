@@ -1,13 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 $primaryColor: #0a66c2;
 $secondaryColor: #ebebeb;
 $backGroundColor: #eef3f8;
+$fonts: "Lato", sans-serif;
 
 * {
   padding: 0;
   margin: 0;
 }
 
+body {
+  background-color: #f3f2ef;
+  font-family: $fonts;
+}
+
 header {
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
   border: 1px solid $secondaryColor;
@@ -68,7 +77,7 @@ header {
   justify-content: center;
 
   a {
-    color: #4B5563;
+    color: #4b5563;
     text-decoration: none;
     flex-direction: column;
     display: flex;
@@ -88,4 +97,144 @@ header {
   a:hover {
     color: black;
   }
+}
+
+// sidebar
+.main-body {
+  margin: auto 9.7rem;
+  display: flex;
+  max-width: 1200px;
+}
+.sidebar {
+  position: sticky;
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.profile-div {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: $primaryColor;
+
+  img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-top: 25px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+.profile-text {
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  small {
+    padding: 0.5rem;
+    color: #6b7280;
+  }
+}
+
+.profile-stats {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  .profile-stat {
+    display: flex;
+    padding: 0.3rem 0.7rem;
+    justify-content: space-between;
+
+    p {
+      padding: 0;
+      font-size: 0.8rem;
+      color: #4b5563;
+      font-weight: bold;
+    }
+  }
+  small {
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 0.7rem;
+    color: blue;
+    font-weight: bold;
+  }
+}
+.profile-stat:hover {
+  cursor: pointer;
+  background-color: #e5e7eb;
+}
+
+.view-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0.7rem;
+
+  p {
+    padding: 0;
+    font-size: 0.8rem;
+    color: #4b5563;
+    font-weight: bold;
+  }
+}
+.view-div:hover {
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+.premium {
+  padding: 0.7rem;
+  border-top: 1px solid #ebebeb;
+
+  small {
+    color: #6b7280;
+  }
+  p {
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    i {
+      color: #f59e0b;
+    }
+  }
+}
+.premium:hover {
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+.bookmarks {
+  padding: 0.7rem;
+  border-top: 1px solid #ebebeb;
+
+  p{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}
+.bookmarks:hover {
+  background-color: #e5e7eb;
+  cursor: pointer;
 }
