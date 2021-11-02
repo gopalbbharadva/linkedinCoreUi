@@ -105,7 +105,7 @@ header {
 
 // first part
 .main-body {
-  margin: auto 9.7rem;
+  margin: 0 9rem;
   display: flex;
   max-width: 1200px;
 }
@@ -289,23 +289,95 @@ header {
 
   small {
     text-align: start;
-    color:#4b5563;
+    color: #4b5563;
     font-weight: bold;
     margin-left: 0.5rem;
     font-size: $recentFonts;
   }
 
-  i{
+  i {
     display: inline-block;
     height: 20px;
     width: 20px;
   }
 }
-.activity-1:hover{
+.activity-1:hover {
   cursor: pointer;
   background-color: $hovercolor;
 
-  small{
+  small {
     color: black;
   }
+}
+
+// center part starts
+.center-part {
+  margin: 0 20px;
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+}
+.post-part {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.make-post {
+  display: flex;
+  justify-content: space-between;
+  img {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  div {
+    cursor: pointer;
+    font-weight: bold;
+    color: #6b7280;
+    padding: 1rem;
+    width: 80%;
+    border: 1px solid #b2b2b2;
+    border-radius: 2rem;
+  }
+  div:hover {
+    background-color: #e5e7eb;
+  }
+}
+.option-part {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    color: black;
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+  a:hover {
+    background-color: $hovercolor;
+  }
+}
+@mixin color($color: #70b5f9) {
+  color: $color;
+}
+.fa-image {
+  @include color;
+}
+.fa-youtube {
+  @include color($color:#7fc15e);
+}
+.fa-calendar-check{
+  @include color($color:#e7a33e);
+}
+.fa-indent{
+  @include color($color:#fc9295);
 }
