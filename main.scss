@@ -109,6 +109,7 @@ header {
 .main-body {
   margin: 0 9rem;
   display: flex;
+  justify-content: space-evenly;
   max-width: 1200px;
 }
 .sidebar {
@@ -426,4 +427,32 @@ header {
 }
 .fa-ellipsis-h:hover {
   background-color: $hovercolor;
+}
+// news section starts
+.news-section {
+  background-color: white;
+  padding: 1rem ;
+  height: fit-content;
+
+  ul {
+    list-style-type: none;
+    li {
+      padding: 0.5rem 0;
+    }
+    p {
+      font-weight: bold;
+    }
+    small {
+      color: #6b7280;
+    }
+    li:hover {
+      background-color: $hovercolor;
+    }
+  }
+}
+.news-header{
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
