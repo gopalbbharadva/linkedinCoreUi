@@ -300,7 +300,6 @@ header {
     font-size: $recentFonts;
   }
 
-  height: 50px;
   i {
     display: inline-block;
     height: 20px;
@@ -434,6 +433,8 @@ header {
 }
 // news section starts
 .news-section {
+  max-width: 250px;
+  width: 100%;
   background-color: white;
   height: fit-content;
 
@@ -505,7 +506,10 @@ header {
     object-fit: contain;
   }
   .features{
+    padding: 1rem;
+    bottom: 0;
     width: 100%;
     display: block;
+    position: fixed;
   }
 }
